@@ -1,1 +1,0 @@
-# informatica-5-6
