@@ -1,5 +1,6 @@
-":)" == input("Hello 🙂 ")
-print(f"Hello {'🙂'}")
-":()" == input("Hello 🙁" \
-" ")
-print(f"Hello {'🙁'}")
+t = input("make a face 🙂, 🙁 or🐱: ").strip()
+t = t.replace(":)", "HIIIII :333 🙂" )
+t = t.replace(":(", "no hi 🙁" )
+t = t.replace(":3", "meow 🐱" )
+t = t.replace(":v", "Victor 🥠" )
+print(t)
