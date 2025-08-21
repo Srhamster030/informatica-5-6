@@ -1,6 +1,6 @@
 def main():
 	print('')
-	print('Please enter the following information to create your ID Card.')
+	print('Set a password.')
 	input('Press enter to continue.')
 	ask_student_info()
 	display_student_info()
