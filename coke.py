@@ -1,9 +1,18 @@
 def main():
-    b = 25, 10, 5
-    b = int(input("Insert a 25, 10 or 5 cents: "))
-    print("You have insert: ",b)
+    price = 50
+    total_paid = 0
+def vending_machine(price, total_paid):
     
-    n = input("Write your name: ")
-    print("Your name is: ",n)
-    
+    def vending_machine(price):
+        while price > 0:
+            print(f"Amount due: {price}")
+            pay = int(input("Insert coin: "))
+        if pay == 25 or pay == 10 or pay == 5:
+            price = price - pay
+            total_paid = total_paid + pay
+        else:
+            print("Not a coin >:(. )")
+        if total_paid >= price:
+            print("Thanks! Here's your Coke 🥤 ")
+            print(f"Here's your change {total_paid - 50}")
 main()
