@@ -1,6 +1,6 @@
 def main():
-    nb = input("Write your name: ")
-    print("Your name is: ", nb)
+    b = input("Write your name: ")
+    print("Your name is: ", b)
 
     price = 50
     total_paid = 0
@@ -17,5 +17,5 @@ def vending_machine(price, total_paid):
             print("Not a coin >:(. )")
     if total_paid >= price:
             print(f"Here's your change {total_paid - 50}")
-            print("Thanks! Here's a Coke for .", nb)
+            print("Thanks! Here's a Coke for .")
 main()
