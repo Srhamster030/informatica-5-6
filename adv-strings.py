@@ -1,4 +1,4 @@
-#String Lenght
+##String Lenght
 input_string = input("Please write a message: ")
 # print (input_string)
 
@@ -17,7 +17,9 @@ i = 0
 
 print("b" in input_string) 
 print("n" in input_string) 
-print("asa" in input_string) 
+print("asa" in input_string)
+print(input_string.find("b")) 
+
 
 
 
