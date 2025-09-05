@@ -3,10 +3,9 @@ def main():
     n = 1
     while 10 >= n:
         if b > 0: 
-            print("yei")
+            print(f"{b} x {n} = ", b * n)
+            n += 1
         else:
             b < 0
             print("negro")
-        
-
 main()
