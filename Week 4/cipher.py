@@ -12,11 +12,11 @@ def encode_message(message): #define the variable and put the limit that is the 
         char = message [i] #to count the characters.
 
         if char in alphabet: #telling the program that if the character is in the alphabet do:
-            cipher_index = alphabet.find(char) #
-            new_message += cipher[cipher_index]
-        else:
-            new_message += char
-        i += 1
-    print("Encoded message: " + new_message)
+            cipher_index = alphabet.find(char) #change the input alphabet for the cipher alphabet.
+            new_message += cipher[cipher_index]#rescribe the message to encode/cipher it.
+        else: #if not...
+            new_message += char#passing to the next letter of the input.
+        i += 1 #start in an new number.
+    print("Encoded message: " + new_message)#print the input and the cipher.
               
 main()
