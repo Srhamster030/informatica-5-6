@@ -1,5 +1,7 @@
 def main():
-    length(values)
+    print(length(values()))
+    mean(values())
+    range_of_list()
 def values():
     value_list = []
     while True:
@@ -7,11 +9,19 @@ def values():
         if (value != 0):
             value_list.append(value)
             print(value_list)
-            value_list.sort()
             ordered_list = sorted(value_list)
             print(ordered_list)
             continue
         else:
-                break
+            break
+        
 def length(list):
      return len(list)
+
+def mean(list):
+     print(sum(list) / len(list))
+
+def range_of_list(list):
+    print(max(list) - min(list))
+    
+main()
