@@ -1,4 +1,4 @@
-doctrine =["Faith", "Repentance", "Baptism", "Holy Ghost", "Endure to the end"]
+doctrine = ["Faith", "Repentance", "Baptism", "Holy Ghost", "Endure to the end"]
 
 # i = 0
 # while i < len(doctrine):
@@ -9,5 +9,5 @@ for principle in doctrine:
     print(principle)
 
 school_objective = ["Deepen conversion into Jesus Christ and Hs restored Gospel",  "Qualify for the blessings of the Temple", "Prepare for missionary and Church service", "Build the Kingdom of God"]
-print(objective)
-print("🔆")
+print(school_objective)
+print("🔆",school_objective)

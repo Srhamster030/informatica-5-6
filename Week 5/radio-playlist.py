@@ -1,7 +1,7 @@
 weekly_playlist = ["Blinding Lights", "Levitating", "As It Was", "Heat Waves", "Good 4 u"]
 print(weekly_playlist[1])
 weekly_playlist_length = len(weekly_playlist)
-print("This playlist has:",weekly_playlist_length,"songs.")
+print("This playlist has:", weekly_playlist_length,"songs.")
 
 
 weekly_playlist.append("drivers license")#add it to the playlist.
