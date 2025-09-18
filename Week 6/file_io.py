@@ -10,7 +10,22 @@
 # for name in sorted(names):
 #       print(f"Hello {name}")
 
-name = input("What's your name?: ") #Aparece otra file:000 xd 
-file = open("names.txt", "a") #"w" is to write in that other file // "a" to append.
-file.write(f"{name}")
-file.close()
+# name = input("What's your name?: ") #Aparece otra file:000 xd 
+# file = open("names.txt", "a") #"w" is to write in that other file // "a" to append.
+# file.write(f"{name}")
+# file.close()
+
+# with open("names.txt", "a") as file: //the same but with two lines less xd.
+#     file.write(f"{input("What's your name?")}")
+
+with open("names.txt", "r") as file: #allows you to see the text in the file.
+    lines = file.readlines()
+
+# for line in lines:
+#     print(f"Hello {line.rstrip()}")
+
+for line in sorted(lines):
+    print(f"Hello {line.strip()}")
+
+
+
