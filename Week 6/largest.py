@@ -5,11 +5,10 @@ def main():
         length = int(input("Enter the length of a list: "))
         number_list.append(length)
     print(number_list)
- 
 
-    file = open("largest.txt", "w", "a") 
+    length = int(input("Enter the length of a list: "))
+    file = open("largest.txt", "w") 
     file.write(f"{length}")
     file.close()
-
-    
+            
 main()
