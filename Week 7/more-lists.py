@@ -18,7 +18,7 @@
 #     group = student[2]
 #     print(f"{name} from group {group} got a {grade}")
 
-#Matrices :v
+#Matrices 
 matrix = [[1,2,3], [4,5,6], [7,8,9]]
 #print rows
 for row in matrix:
