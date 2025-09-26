@@ -16,11 +16,12 @@ def sum_of_colum(matrix, column_number: int): #we expect a matrix an we expect a
 def change_value(matrix, row_number, column_number, new_value):
     row = matrix([row_number])
     row[column_number] = new_value 
-m = [[4, 2, 3, 2], [9, 12, 11], [7, 8, 9, 5], [2, 9, 15, 1]]
+    m = [[4, 2, 3, 2], [9, 12, 11], [7, 8, 9, 5], [2, 9, 15, 1]]
+    
 #my_sum = sum_of_row(m, 1)
 # my_sum = sum_of_row(m, 2)
 # print(m[2][3]) // "row 2, column 3"
 
-print(m)
-change_value(m,2,3,1000)
-print(m)
+    print(m)
+    change_value(m,2,3,1000)
+    print(m)
