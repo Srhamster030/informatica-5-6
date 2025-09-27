@@ -1,27 +1,34 @@
-def sum_of_row(matrix, row_number: int): #defining what do we want to do 
-    row = matrix[row_number]
+def main():
+    matrix = [[1,4,7,1],[3,2,5,8],[5,3,6,9],[2,4,7,10]]
+    for row in matrix:
+        print(f"{row}")
+    sum_of_row(matrix)
+    sum_of_column(matrix)
+    print("")
+    change_value
+
+def sum_of_row(matrix, row_number):
+    row_number = int(input("Select the row: "))
+    row = matrix [row_number]
     row_sum = 0
     for item in row:
-        # row_sum = row_sum + item // Example: 0 +5 = 5+6 = 11+7 = 18
-        row_sum += item #/it is the same than la de arriba xd
+        row_sum += item
 
-    return row_sum
+        print(row_sum)
 
-def sum_of_colum(matrix, column_number: int): #we expect a matrix an we expect an interger.
-    column_sum = 0
-    for row in matrix: #for every row
-        column_sum = column_sum + row[column_number] # add to the row in index x
-    return column_sum
+def sum_of_column(matrix, column_number):
+    column_sum = int(input("Enter a number: "))
+    b = 0
+    for row in matrix:
+        b += row[column_sum]
+    print(column_sum)
 
 def change_value(matrix, row_number, column_number, new_value):
-    row = matrix([row_number])
-    row[column_number] = new_value 
-    m = [[4, 2, 3, 2], [9, 12, 11], [7, 8, 9, 5], [2, 9, 15, 1]]
-    
-#my_sum = sum_of_row(m, 1)
-# my_sum = sum_of_row(m, 2)
-# print(m[2][3]) // "row 2, column 3"
+    row_number = int(input("Enter a row number: "))
+    column_number = int(input("Enter a column number: "))
+    new_value = int(input("Enter a new value: "))
+    matrix[row_number][column_number] = new_value
+    for row in matrix:
+        print(f"{row}")
 
-    print(m)
-    change_value(m,2,3,1000)
-    print(m)
+main()

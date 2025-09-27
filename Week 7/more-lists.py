@@ -21,8 +21,6 @@
 #Matrices 
 matrix = [[1,2,3], [4,5,6], [7,8,9]]
 #print rows
-for colum_index in range(2):
-    for row_index in range(2):
-        list.append(matrix[row_index][colum_index])
-
-print(list)
+for row in matrix:
+    print(row[0],row[1],row[2])
+    list = []
