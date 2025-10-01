@@ -9,6 +9,5 @@ message = input("Write a message: ")
 dictionary = {}
 character_counter(message, dictionary)
 
-def mean_character(message, dictionary):
-    for mean in message:
+print(f"The most repeated number is:{len(message)}")
         
