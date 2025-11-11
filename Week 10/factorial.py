@@ -12,13 +12,24 @@
 
 # def factorial():
 
-def main():
-    while True:
-        x = int(input("Type a positive integer: "))
 
-        if x > 1:
-            print(f"{x}! = {(x)}")            
-        else:
-            print("Type a positive number.")
-            return(x)
-main()
+# x = int(input("Type a positive integer: "))
+# fact = 1
+# for d in range(1,x +1 ):
+#     fact *= d
+#     while True:
+#         print(f"The factoral of {x} is: ", fact)
+#     if x < 0:
+#         print("Type a POSITVE number!")
+#     else:
+#         retrun 
+
+print("Type a positive integer:")
+x = int(input())
+fact = 1
+if x > 0:
+    for i in range(1, x + 1):
+        fact *= i
+    print("The factorial of", x ,"is: ", fact)
+else:
+    print("ERROR")
