@@ -14,10 +14,10 @@
 # import statistics
 # print(statistics.mean([100, 90]))
 
+import sys
 import cowsay
-import sys 
 try:
-    cowsay.cow("Hello, ", sys.argv<[1])
+    cowsay.cow("Hello,", sys.argv[1])
 except IndexError:
-#print("Too few arguments")
+    # print("Too few arguments")
     sys.exit()
